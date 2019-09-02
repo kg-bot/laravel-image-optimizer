@@ -11,12 +11,19 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.7.*"
     },
     "autoload": {
         "psr-4": {
             "DmKnvk\\LaravelImageOptimizer\\": "src"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DmKnvk\\LaravelImageOptimizer\\ServiceProvider"
+            ]
+        }
+    }
 }
